@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خمن العلم</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>لعبة خمن العلم</h1>
+        <div id="flag" class="flag"></div>
+        <input type="text" id="guess" placeholder="ادخل اسم الدولة">
+        <button class="btn" onclick="checkAnswer()">خمن</button>
+        <p id="result"></p>
+        <p id="timer">الوقت: 10</p>
+        <div id="level-container">
+            <button class="btn" onclick="startGame('easy')">سهل</button>
+            <button class="btn" onclick="startGame('medium')">متوسط</button>
+            <button class="btn" onclick="startGame('hard')">صعب</button>
+        </div>
+        <p id="score">النقاط: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
